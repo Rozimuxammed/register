@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
-    const user = null
+    const user = localStorage.getItem("user") || null
     if (user === null) {
-        window.location.href = "login.html"
+        window.location.href = "login.html";
     }
 })
